@@ -249,4 +249,58 @@ body {
   line-height: 1;
 }
 
+@media (min-width: 1440px) {
+  .fs-14 {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  .fs-24 {
+    font-size: 1.75rem;
+    line-height: 1.26;
+  }
+
+  .cpt-container {
+    max-width: 412px;
+    padding: 2rem 2rem 2.66rem 2rem;
+    height: max(26rem, auto);
+  }
+
+  .cpt-rating__heading {
+    margin-top: 1rem;
+  }
+
+  .cpt-rating__rate-btn,
+  .cpt-rating__icon {
+    width: 3.1875rem;
+    height: 3.1875rem;
+  }
+
+  .cpt-rating__rate-btn {
+    font-size: 1rem;
+  }
+}
+
 /* Exception */
+
+.action-needed {
+  animation: shake ease 200ms forwards;
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

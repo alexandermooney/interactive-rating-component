@@ -1,3 +1,4 @@
+const container = document.querySelector('.cpt-container');
 const inputContent = document.querySelector('.cpt-rating__input');
 const submittedContent = document.querySelector('.cpt-rating__submitted');
 const ratingChoices = document.querySelector(".cpt-rating__rate-container");
@@ -19,7 +20,13 @@ ratingChoices.addEventListener('click', (e) => {
 });
 
 submitBtn.addEventListener('click', () => {
-  if (!rating) return;
+  if (!rating) {
+    container.classList.add('action-needed');
+    setTimeout(() => {
+      container.classList.remove('action-needed');
+    }, 201);
+    return;
+  }
   ratingResult.textContent = ratingResult.textContent.replace('$rating', rating);
   inputContent.classList.add('hidden');
   submittedContent.classList.remove('hidden');
