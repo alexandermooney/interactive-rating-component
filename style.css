@@ -184,7 +184,7 @@ body {
   font-weight: 700;
 }
 
-.btn-round {
+.circle {
   border-radius: 50%;
 }
 
@@ -215,13 +215,30 @@ body {
 }
 
 .cpt-rating__rate-btn,
+.cpt-rating__submit {
+  transition: 250ms ease-out;
+}
+
+.cpt-rating__rate-btn:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-100);
+}
+
+.cpt-rating__rate-btn,
 .cpt-rating__icon {
   width: 2.625rem;
   height: 2.625rem;
+  line-height: 1;
 }
 
 .cpt-rating__submit {
-  padding: .3125em .75em;
+  padding: .75rem;
+  letter-spacing: 1.86px;
+}
+
+.cpt-rating__submit:hover {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-primary);
 }
 
 .cpt-rating__result {
