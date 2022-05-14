@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+
+  <title>Frontend Mentor | Interactive Rating Component</title>
+
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Rating state start -->
 
-  How did we do?
+  <div class="[ cpt-container ]">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <div class="[ cpt-rating__input ]">
+      <img class="[ cpt-rating__icon ]" src="images/icon-star.svg" alt="">
+      <h3 class="[ cpt-rating__heading ]">How did we do?</h3>
+      <p class="[ cpt-rating__msg ]">Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!</p>
+      <ul class="[ cpt-rating__rate-container ]">
+        <li class="[ cpt-rating__rate-btn ]">1</li>
+        <li class="[ cpt-rating__rate-btn ]">2</li>
+        <li class="[ cpt-rating__rate-btn ]">3</li>
+        <li class="[ cpt-rating__rate-btn ]">4</li>
+        <li class="[ cpt-rating__rate-btn ]">5</li>
+      </ul>
+      <button class="[ cpt-rating__submit ]">Submit</button>
+    </div>
 
-  1 2 3 4 5
+    <div class="[ cpt-rating__submitted ]">
+      <img class="[ cpt-rating__image ]" src="images/illustration-thank-you.svg" alt="">
+      <p class="[ cpt-rating__result ]">You selected #rating out of 5</p>
+      <h3 class="[ cpt-rating__heading ]">Thank you!</h3>
+      <p class="[ cpt-rating__msg ]">We appreciate you taking the time to give a rating. If you ever need more support,
+        don't hesitate to get in touch!</p>
+    </div>
 
-  Submit
+  </div>
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/alexandermooney" target="_blank">Alex Mooney</a>.
   </div>
 </body>
+
 </html>
