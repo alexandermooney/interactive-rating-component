@@ -32,9 +32,9 @@
 
   <!-- Rating state start -->
 
-  <div class="[ cpt-container ] [ bg-gradient-dark ]">
+  <div class="[ cpt-container ] [ round-edges bg-gradient-dark ]">
 
-    <div class="[ cpt-rating__input ] [ flex-flow flex-column ]">
+    <div class="[ cpt-rating__input ] [ flex-flow flex-column ] [ hidden ]">
       <div class="[ cpt-rating__icon ] [ center-content ] [ bg-darkblue ]">
         <img class="" src="images/icon-star.svg" alt="">
       </div>
@@ -50,14 +50,18 @@
         <li class="[ cpt-rating__rate-btn ] [ center-content bg-darkblue btn-round ] [ btn ]">5</li>
       </ul>
       <button
-        class="[ cpt-rating__submit ] [ text-center ] [ clr-white uppercase bg-primary fs-14 ] [ btn ]">Submit</button>
+        class="[ cpt-rating__submit ] [ text-center ] [ round-edges clr-white uppercase bg-primary fs-14 ] [ btn ]">Submit</button>
     </div>
 
-    <div class="[ cpt-rating__submitted ] [ hidden ]">
-      <img class="[ cpt-rating__image ]" src="images/illustration-thank-you.svg" alt="">
-      <p class="[ cpt-rating__result ]">You selected #rating out of 5</p>
+    <div class="[ cpt-rating__submitted ] [ flex-flow flex-column text-center ]">
+      <div class="[ cpt-rating__image ]">
+        <img class="align-center" src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <p class="[ cpt-rating__result ] [ align-center ] [ bg-darkblue clr-primary round-edges ]">You selected #rating
+        out of 5</p>
       <h3 class="[ cpt-rating__heading ] [ fs-24 fw-700 ]">Thank you!</h3>
-      <p class="[ cpt-rating__msg ]">We appreciate you taking the time to give a rating. If you ever need more support,
+      <p class="[ cpt-rating__msg ] [ clr-grey ]">We appreciate you taking the time to give a rating. If you ever need
+        more support,
         don't hesitate to get in touch!</p>
     </div>
 
